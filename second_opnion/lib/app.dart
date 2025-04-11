@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:second_opnion/presentation/home_page/Presentation/home_page.dart';
-import 'package:second_opnion/presentation/vendors/presentation/vendor_listing.dart';
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
@@ -16,7 +15,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       themeAnimationCurve: Curves.linearToEaseOut,
       theme: ThemeData(fontFamily: 'Poppins'),
-      home: AstrologerHomePage(),
+      home: HomePage(),
     );
   }
 }

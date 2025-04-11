@@ -266,22 +266,29 @@ class AstrologerHomePage extends StatelessWidget {
                 height: 50,
               ),
               SizedBox(
-                height: 37,
+                height: 34,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     backgroundColor: ColorConstant.scaffoldColor,
                     foregroundColor: ColorConstant.primaryColor,
                     shadowColor:
                         ColorConstant.primaryColor.withValues(alpha: 0.2),
-                    elevation: 5,
-                    side: BorderSide(color: ColorConstant.primaryColor),
+                    elevation: 0.5,
+                    side: BorderSide(
+                        color: ColorConstant.primaryColor, width: 0.2),
                     padding:
-                        const EdgeInsets.symmetric(horizontal: 18, vertical: 8),
+                        const EdgeInsets.symmetric(horizontal: 18, vertical: 2),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12)),
                   ),
                   onPressed: () {},
-                  child: const Text("Chat"),
+                  child: Text(
+                    "Chat Now",
+                    style: TextStyle(
+                        color: ColorConstant.primaryColor,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w500),
+                  ),
                 ),
               ),
             ],

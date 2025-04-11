@@ -57,9 +57,18 @@ class CustomLawyerComponent extends StatelessWidget {
         const SizedBox(
           height: 5,
         ),
-        Text(title,
-            style: TextStyle(
-                color: ColorConstant.textColor, fontWeight: FontWeight.w500)),
+        Row(
+          children: [
+            Text(title,
+                style: TextStyle(
+                    color: ColorConstant.textColor,
+                    fontWeight: FontWeight.w500)),
+            const SizedBox(
+              width: 2,
+            ),
+            Icon(Icons.verified, color: Colors.green, size: 12)
+          ],
+        ),
         Text(desc,
             style: TextStyle(
                 color: ColorConstant.greyTextColor,
